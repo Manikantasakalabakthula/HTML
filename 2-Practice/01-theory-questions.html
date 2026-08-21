@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theory questions</title>
+</head>
+<body>
+    <h1>Theory Questions</h1>
+
+<h2>1. HTML Fundamentals + Document Structure</h2>
+
+<p>Q1. What is HTML? Explain tags, elements, attributes, nesting, parent/child elements, void elements, and comments with simple examples.</p>
+<ul>
+    <li>
+        <strong>HTML:</strong> HyperText Markup Language; the standard code used to structure web pages and their content.
+    </li>
+    <li>
+        <strong>Tags:</strong> Syntax keywords surrounded by angle brackets that define where an element begins and ends.
+        <br><em>Example:</em> <code>&lt;p&gt;</code> (opening) and <code>&lt;/p&gt;</code> (closing)
+    </li>
+    <li>
+        <strong>Elements:</strong> The complete unit from the opening tag to the closing tag, including content.
+        <br><em>Example:</em> <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+    </li>
+    <li>
+        <strong>Attributes:</strong> Modifiers that provide additional information or configuration inside an opening tag.
+        <br><em>Example:</em> <code>&lt;a href="https://example.com"&gt;Visit Site&lt;/a&gt;</code>
+    </li>
+    <li>
+        <strong>Nesting:</strong> Placing one HTML element inside another to build hierarchy.
+        <br><em>Example:</em> <code>&lt;p&gt;This is &lt;strong&gt;important&lt;/strong&gt;.&lt;/p&gt;</code>
+    </li>
+    <li>
+        <strong>Parent/Child:</strong> The outer container is the parent, and any nested element inside it is the child.
+        <br><em>Example:</em> In <code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code>, <code>&lt;ul&gt;</code> is parent, <code>&lt;li&gt;</code> is child.
+    </li>
+    <li>
+        <strong>Void Elements:</strong> Elements that close themselves and cannot hold child elements or text.
+        <br><em>Example:</em> <code>&lt;img src="pic.jpg" alt="Photo"&gt;</code>, <code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code>, <code>&lt;input type="text"&gt;</code>
+    </li>
+    <li>
+        <strong>Comments:</strong> Notes in the source code ignored by browsers during rendering.
+        <br><em>Example:</em> <code>&lt;!-- Navigation bar starts here --&gt;</code>
+    </li>
+</ul>
+
+<p>Q2. Explain the basic structure of an HTML document. Describe &lt;!DOCTYPE html&gt;, &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, lang, &lt;title&gt;, character encoding, viewport, and favicon.</p>
+<ul>
+    <li>
+        <strong>&lt;!DOCTYPE html&gt;:</strong> Informs the browser to render the page in modern HTML5 standards mode.
+        <br><em>Example:</em> <code>&lt;!DOCTYPE html&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;html&gt;:</strong> The root element that encapsulates all other document tags.
+        <br><em>Example:</em> <code>&lt;html lang="en"&gt;...&lt;/html&gt;</code>
+    </li>
+    <li>
+        <strong>lang:</strong> Specifies the primary human language of the page content.
+        <br><em>Example:</em> <code>&lt;html lang="en"&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;head&gt;:</strong> Container for machine-readable metadata, styles, and links not rendered in the main view.
+        <br><em>Example:</em> <code>&lt;head&gt;...&lt;/head&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;body&gt;:</strong> Container for all user-visible page content (text, media, layout).
+        <br><em>Example:</em> <code>&lt;body&gt;&lt;p&gt;Welcome&lt;/p&gt;&lt;/body&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;title&gt;:</strong> Defines the webpage name displayed in the browser tab and search results.
+        <br><em>Example:</em> <code>&lt;title&gt;Dashboard&lt;/title&gt;</code>
+    </li>
+    <li>
+        <strong>Character Encoding:</strong> Enforces standard UTF-8 character rendering for global text and symbols.
+        <br><em>Example:</em> <code>&lt;meta charset="UTF-8"&gt;</code>
+    </li>
+    <li>
+        <strong>Viewport:</strong> Controls layout scaling on mobile devices to ensure responsive sizing.
+        <br><em>Example:</em> <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+    </li>
+    <li>
+        <strong>Favicon:</strong> The small brand icon shown beside the page title on the browser tab.
+        <br><em>Example:</em> <code>&lt;link rel="icon" href="favicon.ico"&gt;</code>
+    </li>
+</ul>
+
+<hr>
+
+<h2>2. Text & Content</h2>
+
+<p>Q3. Explain headings, paragraphs, strong, em, mark, small, br, and hr with examples.</p>
+<ul>
+    <li>
+        <strong>Headings:</strong> Six levels of sectional titles ranging from most to least important (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>).
+        <br><em>Example:</em> <code>&lt;h1&gt;Main Title&lt;/h1&gt;</code>
+    </li>
+    <li>
+        <strong>Paragraphs:</strong> Represents standard blocks of text.
+        <br><em>Example:</em> <code>&lt;p&gt;This is a standard text block.&lt;/p&gt;</code>
+    </li>
+    <li>
+        <strong>strong:</strong> Indicates urgent or high-importance content; rendered bold by default.
+        <br><em>Example:</em> <code>&lt;strong&gt;Danger:&lt;/strong&gt; High voltage!</code>
+    </li>
+    <li>
+        <strong>em:</strong> Applies vocal stress emphasis; rendered italic by default.
+        <br><em>Example:</em> <code>I &lt;em&gt;really&lt;/em&gt; enjoyed that.</code>
+    </li>
+    <li>
+        <strong>mark:</strong> Highlights text for reference relevance; defaults to a yellow highlight.
+        <br><em>Example:</em> <code>Search term: &lt;mark&gt;HTML5&lt;/mark&gt;</code>
+    </li>
+    <li>
+        <strong>small:</strong> Represents secondary fine print, legal terms, or disclaimers.
+        <br><em>Example:</em> <code>&lt;small&gt;&copy; 2026 Company Inc.&lt;/small&gt;</code>
+    </li>
+    <li>
+        <strong>br:</strong> Forces a manual line break inside inline text.
+        <br><em>Example:</em> <code>100 Broadway&lt;br&gt;New York, NY</code>
+    </li>
+    <li>
+        <strong>hr:</strong> Inserts a thematic horizontal rule to divide sections.
+        <br><em>Example:</em> <code>&lt;hr&gt;</code>
+    </li>
+</ul>
+
+<p>Q4. Explain blockquote, q, pre, and code. When would you use each one?</p>
+<ul>
+    <li>
+        <strong>blockquote:</strong> Used for long, multi-line quotations from external sources; renders with left indentation.
+        <br><em>Example:</em> <code>&lt;blockquote cite="https://site.com"&gt;Long quotation...&lt;/blockquote&gt;</code>
+    </li>
+    <li>
+        <strong>q:</strong> Used for short, inline quotes inside a paragraph; auto-inserts quotation marks.
+        <br><em>Example:</em> <code>He replied, &lt;q&gt;The task is complete.&lt;/q&gt;</code>
+    </li>
+    <li>
+        <strong>pre:</strong> Preserves exact spaces, tabs, and line breaks in a monospace font.
+        <br><em>Example:</em> <code>&lt;pre&gt;Item     Qty&lt;br&gt;Apples   5&lt;/pre&gt;</code>
+    </li>
+    <li>
+        <strong>code:</strong> Used to display inline code keywords, commands, or variable names.
+        <br><em>Example:</em> <code>Use the &lt;code&gt;map()&lt;/code&gt; method.</code>
+    </li>
+    <li>
+        <strong>Multi-Line Code Block:</strong> Nesting <code>&lt;code&gt;</code> inside <code>&lt;pre&gt;</code> formats programming code blocks with preserved whitespace.
+        <br><em>Example:</em> <code>&lt;pre&gt;&lt;code&gt;const x = 10;&lt;/code&gt;&lt;/pre&gt;</code>
+    </li>
+</ul>
+
+<hr>
+
+<h2>3. Links & Navigation</h2>
+
+<p>Q5. Explain the &lt;a&gt; element and the difference between absolute URLs, relative URLs, internal links, and fragment links with examples.</p>
+<ul>
+    <li>
+        <strong>&lt;a&gt; Element:</strong> The anchor tag creates hyperlinks to other pages, files, or anchors using <code>href</code>.
+        <br><em>Example:</em> <code>&lt;a href="https://example.com"&gt;Link&lt;/a&gt;</code>
+    </li>
+    <li>
+        <strong>Absolute URLs:</strong> Full web addresses including protocol and domain name.
+        <br><em>Example:</em> <code>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</code>
+    </li>
+    <li>
+        <strong>Relative URLs:</strong> Paths resolved relative to the current file location.
+        <br><em>Example:</em> <code>&lt;a href="about.html"&gt;About Us&lt;/a&gt;</code>
+    </li>
+    <li>
+        <strong>Internal Links:</strong> Links between different pages hosted within the same website.
+        <br><em>Example:</em> <code>&lt;a href="/contact"&gt;Contact&lt;/a&gt;</code>
+    </li>
+    <li>
+        <strong>Fragment Links:</strong> In-page bookmark links targeting specific elements via their <code>id</code>.
+        <br><em>Example:</em> <code>&lt;a href="#reviews"&gt;Read Reviews&lt;/a&gt;</code>
+    </li>
+</ul>
+
+<p>Q6. Explain email links, telephone links, target, rel, &lt;nav&gt;, and meaningful link text with examples.</p>
+<ul>
+    <li>
+        <strong>Email Links:</strong> Uses the <code>mailto:</code> scheme to open default email software.
+        <br><em>Example:</em> <code>&lt;a href="mailto:team@example.com"&gt;Email Us&lt;/a&gt;</code>
+    </li>
+    <li>
+        <strong>Telephone Links:</strong> Uses the <code>tel:</code> scheme to initiate phone calls on mobile devices.
+        <br><em>Example:</em> <code>&lt;a href="tel:+1234567890"&gt;Call +1234567890&lt;/a&gt;</code>
+    </li>
+    <li>
+        <strong>target:</strong> Specifies where to display the linked resource (e.g., in a new tab).
+        <br><em>Example:</em> <code>&lt;a href="https://site.com" target="_blank"&gt;Open Tab&lt;/a&gt;</code>
+    </li>
+    <li>
+        <strong>rel:</strong> Secures new-tab links by preventing tab hijacking and referrer leaks.
+        <br><em>Example:</em> <code>&lt;a href="https://site.com" target="_blank" rel="noopener noreferrer"&gt;Secure Link&lt;/a&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;nav&gt;:</strong> Semantic element that marks up main site navigation menus.
+        <br><em>Example:</em> <code>&lt;nav&gt;&lt;a href="/"&gt;Home&lt;/a&gt; &lt;a href="/shop"&gt;Shop&lt;/a&gt;&lt;/nav&gt;</code>
+    </li>
+    <li>
+        <strong>Meaningful Link Text:</strong> Clear, descriptive anchor text that explains destination context.
+        <br><em>Example:</em> <code>&lt;a href="guide.pdf"&gt;Download Setup Guide&lt;/a&gt;</code> (instead of "Click here")
+    </li>
+</ul>
+
+<hr>
+
+<h2>4. HTML Entities</h2>
+
+<p>Q7. What are HTML entities? Why are they used? Explain common entities such as &amp;lt;, &amp;gt;, &amp;amp;, &amp;quot;, and &amp;nbsp;.</p>
+<ul>
+    <li>
+        <strong>HTML Entities:</strong> Formatted strings starting with <code>&amp;</code> and ending with <code>;</code> that represent characters.
+    </li>
+    <li>
+        <strong>Why Used:</strong> To display reserved syntax characters safely without breaking HTML parsing, and to output non-keyboard symbols.
+    </li>
+    <li>
+        <strong>&amp;lt;:</strong> Less-than operator (<code>&lt;</code>).
+        <br><em>Example:</em> <code>&lt;p&gt;3 &amp;lt; 8&lt;/p&gt;</code>
+    </li>
+    <li>
+        <strong>&amp;gt;:</strong> Greater-than operator (<code>&gt;</code>).
+        <br><em>Example:</em> <code>&lt;p&gt;8 &amp;gt; 3&lt;/p&gt;</code>
+    </li>
+    <li>
+        <strong>&amp;amp;:</strong> Ampersand symbol (<code>&amp;</code>).
+        <br><em>Example:</em> <code>&lt;p&gt;Ben &amp;amp; Jerry&lt;/p&gt;</code>
+    </li>
+    <li>
+        <strong>&amp;quot;:</strong> Double quotation mark (<code>"</code>).
+        <br><em>Example:</em> <code>&lt;p&gt;&amp;quot;Hello&amp;quot;&lt;/p&gt;</code>
+    </li>
+    <li>
+        <strong>&amp;nbsp;:</strong> Non-breaking space preventing line-wrap between adjacent words.
+        <br><em>Example:</em> <code>&lt;p&gt;Page&amp;nbsp;1&lt;/p&gt;</code>
+    </li>
+</ul>
+
+<p>Q8. How would you display special characters such as copyright, trademark, less-than, greater-than, and quotation marks in HTML? Give examples.</p>
+<ul>
+    <li>
+        <strong>Copyright (&copy;):</strong> <code>&amp;copy;</code>
+        <br><em>Example:</em> <code>&lt;p&gt;&amp;copy; 2026 Acme Corp.&lt;/p&gt;</code>
+    </li>
+    <li>
+        <strong>Registered Trademark (&reg;):</strong> <code>&amp;reg;</code>
+        <br><em>Example:</em> <code>&lt;p&gt;Nike&amp;reg;&lt;/p&gt;</code>
+    </li>
+    <li>
+        <strong>Trademark (&trade;):</strong> <code>&amp;trade;</code>
+        <br><em>Example:</em> <code>&lt;p&gt;Innovate&amp;trade;&lt;/p&gt;</code>
+    </li>
+    <li>
+        <strong>Less-than (&lt;):</strong> <code>&amp;lt;</code>
+        <br><em>Example:</em> <code>&lt;p&gt;A &amp;lt; B&lt;/p&gt;</code>
+    </li>
+    <li>
+        <strong>Greater-than (&gt;):</strong> <code>&amp;gt;</code>
+        <br><em>Example:</em> <code>&lt;p&gt;B &amp;gt; A&lt;/p&gt;</code>
+    </li>
+    <li>
+        <strong>Quotation Marks (&quot;):</strong> <code>&amp;quot;</code>
+        <br><em>Example:</em> <code>&lt;p&gt;&amp;quot;Success&amp;quot;&lt;/p&gt;</code>
+    </li>
+</ul>
+
+<hr>
+
+<h2>5. Images</h2>
+
+<p>Q9. Explain how to add an image using &lt;img&gt;. Explain src, alt, width, and height. Why is alt important?</p>
+<ul>
+    <li>
+        <strong>&lt;img&gt; Element:</strong> Embeds graphics and photos onto a web page.
+        <br><em>Example:</em> <code>&lt;img src="lake.jpg" alt="Mountain lake at sunrise" width="600" height="400"&gt;</code>
+    </li>
+    <li>
+        <strong>src:</strong> Defines the file path or URL of the image.
+        <br><em>Example:</em> <code>src="assets/logo.png"</code>
+    </li>
+    <li>
+        <strong>alt:</strong> Provides descriptive text fallback for accessibility and failed loads.
+        <br><em>Example:</em> <code>alt="Company Logo"</code>
+    </li>
+    <li>
+        <strong>width &amp; height:</strong> Reserves fixed layout space to prevent page layout jumps during load.
+        <br><em>Example:</em> <code>width="300" height="200"</code>
+    </li>
+    <li>
+        <strong>Importance of alt:</strong> Critical for screen readers used by visually impaired users, displays when network failures occur, and improves SEO.
+    </li>
+</ul>
+
+<p>Q10. Explain &lt;figure&gt;, &lt;figcaption&gt;, &lt;picture&gt;, and srcset. How can HTML provide different images for different screen sizes?</p>
+<ul>
+    <li>
+        <strong>&lt;figure&gt; &amp; &lt;figcaption&gt;:</strong> <code>&lt;figure&gt;</code> wraps standalone media, and <code>&lt;figcaption&gt;</code> provides its visible caption.
+        <br><em>Example:</em> <code>&lt;figure&gt;&lt;img src="graph.png" alt="Sales"&gt;&lt;figcaption&gt;Fig 1. Sales Growth&lt;/figcaption&gt;&lt;/figure&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;picture&gt;:</strong> Wrapper containing multiple <code>&lt;source&gt;</code> tags for art direction and modern format switching.
+        <br><em>Example:</em> <code>&lt;picture&gt;&lt;source srcset="img.webp" type="image/webp"&gt;&lt;img src="img.jpg" alt="View"&gt;&lt;/picture&gt;</code>
+    </li>
+    <li>
+        <strong>srcset:</strong> Lists multiple image file sources along with width/density descriptors.
+        <br><em>Example:</em> <code>srcset="small.jpg 400w, large.jpg 800w"</code>
+    </li>
+    <li>
+        <strong>Serving Different Image Sizes:</strong> Combining <code>srcset</code> with <code>sizes</code> allows browsers to download only the optimal file based on screen resolution.
+        <br><em>Example:</em> <code>&lt;img src="def.jpg" srcset="sm.jpg 400w, lg.jpg 800w" sizes="(max-width: 600px) 400px, 800px" alt="Responsive"&gt;</code>
+    </li>
+</ul>
+
+<hr>
+
+<h2>6. Lists</h2>
+
+<p>Q11. Explain unordered lists and ordered lists. What is the difference between &lt;ul&gt; and &lt;ol&gt;? Give examples.</p>
+<ul>
+    <li>
+        <strong>Unordered List (&lt;ul&gt;):</strong> Displays bulleted list items where order is not significant.
+        <br><em>Example:</em> <code>&lt;ul&gt;&lt;li&gt;Milk&lt;/li&gt;&lt;li&gt;Eggs&lt;/li&gt;&lt;/ul&gt;</code>
+    </li>
+    <li>
+        <strong>Ordered List (&lt;ol&gt;):</strong> Displays numbered list items where sequential order matters.
+        <br><em>Example:</em> <code>&lt;ol&gt;&lt;li&gt;First Step&lt;/li&gt;&lt;li&gt;Second Step&lt;/li&gt;&lt;/ol&gt;</code>
+    </li>
+    <li>
+        <strong>Difference:</strong> <code>&lt;ul&gt;</code> uses bullets for unordered collections; <code>&lt;ol&gt;</code> uses numbers for steps, ranks, and sequences.
+    </li>
+</ul>
+
+<p>Q12. Explain nested lists and description lists using &lt;dl&gt;, &lt;dt&gt;, and &lt;dd&gt; with examples.</p>
+<ul>
+    <li>
+        <strong>Nested Lists:</strong> A list placed inside another list item to build hierarchical menus.
+        <br><em>Example:</em> <code>&lt;ul&gt;&lt;li&gt;Fruits&lt;ul&gt;&lt;li&gt;Apple&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</code>
+    </li>
+    <li>
+        <strong>Description List (&lt;dl&gt;):</strong> Container for term-description and key-value pairs.
+    </li>
+    <li>
+        <strong>Description Term (&lt;dt&gt;):</strong> Defines the term or label name.
+    </li>
+    <li>
+        <strong>Description Details (&lt;dd&gt;):</strong> Defines the detailed explanation or value for the preceding <code>&lt;dt&gt;</code>.
+        <br><em>Example:</em> <code>&lt;dl&gt;&lt;dt&gt;CSS&lt;/dt&gt;&lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;&lt;/dl&gt;</code>
+    </li>
+</ul>
+
+<hr>
+
+<h2>7. Tables</h2>
+
+<p>Q13. Explain the basic structure of an HTML table using &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; with an example.</p>
+<ul>
+    <li>
+        <strong>&lt;table&gt;:</strong> The main container element for structured rows and columns.
+    </li>
+    <li>
+        <strong>&lt;tr&gt;:</strong> Table row element that groups cells horizontally.
+    </li>
+    <li>
+        <strong>&lt;th&gt;:</strong> Table header cell that renders bold, centered category titles.
+    </li>
+    <li>
+        <strong>&lt;td&gt;:</strong> Table data cell that holds regular data content.
+        <br><em>Example:</em>
+        <br><code>&lt;table&gt;</code>
+        <br>&nbsp;&nbsp;<code>&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Role&lt;/th&gt;&lt;/tr&gt;</code>
+        <br>&nbsp;&nbsp;<code>&lt;tr&gt;&lt;td&gt;Sam&lt;/td&gt;&lt;td&gt;Engineer&lt;/td&gt;&lt;/tr&gt;</code>
+        <br><code>&lt;/table&gt;</code>
+    </li>
+</ul>
+
+<p>Q14. Explain &lt;caption&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, rowspan, and colspan. How do they help in creating structured tables?</p>
+<ul>
+    <li>
+        <strong>&lt;caption&gt;:</strong> Title or summary placed directly above the table for accessibility.
+        <br><em>Example:</em> <code>&lt;caption&gt;Quarterly Sales&lt;/caption&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;:</strong> Group header rows, body rows, and summary footer rows for styling and print pagination.
+        <br><em>Example:</em> <code>&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Total&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</code>
+    </li>
+    <li>
+        <strong>rowspan:</strong> Merges a cell vertically across multiple rows.
+        <br><em>Example:</em> <code>&lt;td rowspan="2"&gt;Spans 2 rows&lt;/td&gt;</code>
+    </li>
+    <li>
+        <strong>colspan:</strong> Merges a cell horizontally across multiple columns.
+        <br><em>Example:</em> <code>&lt;th colspan="3"&gt;Spans 3 columns&lt;/th&gt;</code>
+    </li>
+    <li>
+        <strong>Structural Benefits:</strong> Improves accessibility for assistive readers, allows clean CSS styling targets, and enables repeated headers during printing.
+    </li>
+</ul>
+
+<hr>
+
+<h2>8. Forms</h2>
+
+<p>Q15. Explain the basic structure of an HTML form. Describe &lt;form&gt;, &lt;label&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt;, &lt;option&gt;, and &lt;button&gt; with examples.</p>
+<ul>
+    <li>
+        <strong>&lt;form&gt;:</strong> Container for user input controls with submit destination (<code>action</code>) and HTTP method (<code>GET/POST</code>).
+        <br><em>Example:</em> <code>&lt;form action="/login" method="post"&gt;...&lt;/form&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;label&gt;:</strong> Accessible description bound to an input via <code>for="id"</code> to expand clickable area.
+        <br><em>Example:</em> <code>&lt;label for="user"&gt;Username:&lt;/label&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;input&gt;:</strong> Versatile input field controlled by the <code>type</code> attribute.
+        <br><em>Example:</em> <code>&lt;input type="text" id="user" name="user"&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;textarea&gt;:</strong> Multi-line text field for longer inputs.
+        <br><em>Example:</em> <code>&lt;textarea name="msg" rows="4"&gt;&lt;/textarea&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;select&gt; &amp; &lt;option&gt;:</strong> Dropdown list where <code>&lt;select&gt;</code> holds the menu and <code>&lt;option&gt;</code> contains items.
+        <br><em>Example:</em> <code>&lt;select name="role"&gt;&lt;option value="admin"&gt;Admin&lt;/option&gt;&lt;/select&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;button&gt;:</strong> Trigger element used to submit (<code>type="submit"</code>) or reset forms.
+        <br><em>Example:</em> <code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code>
+    </li>
+</ul>
+
+<p>Q16. Explain common input types and form attributes such as required, placeholder, name, value, min, max, minlength, maxlength, pattern, and autocomplete. Also explain HTML form validation.</p>
+<ul>
+    <li>
+        <strong>Input Types:</strong> <code>text</code>, <code>password</code>, <code>email</code>, <code>number</code>, <code>checkbox</code>, <code>radio</code>, <code>date</code>, <code>file</code>, <code>submit</code>.
+        <br><em>Example:</em> <code>&lt;input type="password"&gt;</code>
+    </li>
+    <li>
+        <strong>name &amp; value:</strong> <code>name</code> is the field key sent to the server; <code>value</code> is the field content.
+        <br><em>Example:</em> <code>&lt;input type="text" name="city" value="Paris"&gt;</code>
+    </li>
+    <li>
+        <strong>required &amp; placeholder:</strong> <code>required</code> makes entry mandatory; <code>placeholder</code> provides a hint inside the empty field.
+        <br><em>Example:</em> <code>&lt;input type="email" placeholder="name@site.com" required&gt;</code>
+    </li>
+    <li>
+        <strong>min, max, minlength, maxlength:</strong> Enforces numeric ranges or character string limits.
+        <br><em>Example:</em> <code>&lt;input type="number" min="1" max="10"&gt;</code>, <code>&lt;input type="text" minlength="5" maxlength="20"&gt;</code>
+    </li>
+    <li>
+        <strong>pattern &amp; autocomplete:</strong> <code>pattern</code> validates via RegEx; <code>autocomplete</code> configures browser autofill.
+        <br><em>Example:</em> <code>&lt;input type="text" pattern="[0-9]{4}" autocomplete="postal-code"&gt;</code>
+    </li>
+    <li>
+        <strong>HTML Form Validation:</strong> Native browser feature that checks field values against validation constraints automatically and blocks invalid submissions.
+    </li>
+</ul>
+
+<hr>
+
+<h2>9. Semantic HTML</h2>
+
+<p>Q17. What is semantic HTML? Explain &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, and &lt;footer&gt; with examples.</p>
+<ul>
+    <li>
+        <strong>Semantic HTML:</strong> The practice of using HTML tags that convey clear structural meaning and context to developers, browsers, and screen readers.
+    </li>
+    <li>
+        <strong>&lt;header&gt;:</strong> Container for introductory titles, branding, and top navigation.
+        <br><em>Example:</em> <code>&lt;header&gt;&lt;h1&gt;Site Name&lt;/h1&gt;&lt;/header&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;nav&gt;:</strong> Wraps primary navigation menu links.
+        <br><em>Example:</em> <code>&lt;nav&gt;&lt;a href="/home"&gt;Home&lt;/a&gt;&lt;/nav&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;main&gt;:</strong> Houses the primary unique content of the page (used only once per page).
+        <br><em>Example:</em> <code>&lt;main&gt;&lt;h2&gt;Story&lt;/h2&gt;&lt;/main&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;section&gt;:</strong> A thematic grouping of content, typically grouped under a heading.
+        <br><em>Example:</em> <code>&lt;section&gt;&lt;h2&gt;Features&lt;/h2&gt;&lt;/section&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;article&gt;:</strong> A standalone, self-contained piece of content suitable for reuse or sharing.
+        <br><em>Example:</em> <code>&lt;article&gt;&lt;h2&gt;Blog Post&lt;/h2&gt;&lt;p&gt;Article text...&lt;/p&gt;&lt;/article&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;aside&gt;:</strong> Secondary, tangentially related content like sidebars or author boxes.
+        <br><em>Example:</em> <code>&lt;aside&gt;&lt;p&gt;Related posts...&lt;/p&gt;&lt;/aside&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;footer&gt;:</strong> Concluding section containing copyright info, contact details, and site links.
+        <br><em>Example:</em> <code>&lt;footer&gt;&lt;p&gt;&copy; 2026 All Rights Reserved&lt;/p&gt;&lt;/footer&gt;</code>
+    </li>
+</ul>
+
+<p>Q18. Explain &lt;figure&gt;, &lt;figcaption&gt;, &lt;time&gt;, and &lt;address&gt;. Also explain the difference between semantic and non-semantic HTML elements.</p>
+<ul>
+    <li>
+        <strong>&lt;figure&gt; &amp; &lt;figcaption&gt;:</strong> <code>&lt;figure&gt;</code> encapsulates standalone media, and <code>&lt;figcaption&gt;</code> supplies its visible title.
+        <br><em>Example:</em> <code>&lt;figure&gt;&lt;img src="pic.jpg" alt="Map"&gt;&lt;figcaption&gt;Office Map&lt;/figcaption&gt;&lt;/figure&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;time&gt;:</strong> Encodes dates and times in machine-readable format using <code>datetime</code>.
+        <br><em>Example:</em> <code>&lt;time datetime="2026-08-21"&gt;August 21, 2026&lt;/time&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;address&gt;:</strong> Encloses contact details for the author or owning organization.
+        <br><em>Example:</em> <code>&lt;address&gt;Contact: support@example.com&lt;/address&gt;</code>
+    </li>
+    <li>
+        <strong>Semantic vs. Non-Semantic Elements:</strong> Semantic elements (e.g., <code>&lt;article&gt;</code>, <code>&lt;nav&gt;</code>) convey meaning to search engines and screen readers; non-semantic elements (e.g., <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>) act purely as style/script wrappers with no semantic meaning.
+    </li>
+</ul>
+
+<hr>
+
+<h2>10. Multimedia</h2>
+
+<p>Q19. Explain how to add audio and video to an HTML page. Describe &lt;audio&gt;, &lt;video&gt;, &lt;source&gt;, and important attributes such as controls, autoplay, muted, and loop.</p>
+<ul>
+    <li>
+        <strong>&lt;audio&gt; &amp; &lt;video&gt;:</strong> Native HTML5 media tags for playing sound clips and video files without external plugins.
+        <br><em>Example:</em> <code>&lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;source&gt;:</strong> Nested tag specifying alternate file formats (e.g., WebM, MP4) so browsers pick supported formats.
+        <br><em>Example:</em> <code>&lt;video controls&gt;&lt;source src="clip.mp4" type="video/mp4"&gt;&lt;/video&gt;</code>
+    </li>
+    <li>
+        <strong>controls:</strong> Renders default browser player controls (play, pause, volume, seeker).
+        <br><em>Example:</em> <code>&lt;video controls&gt;...&lt;/video&gt;</code>
+    </li>
+    <li>
+        <strong>autoplay:</strong> Starts playback automatically on load (requires <code>muted</code> in modern browsers).
+        <br><em>Example:</em> <code>&lt;video autoplay muted&gt;...&lt;/video&gt;</code>
+    </li>
+    <li>
+        <strong>muted:</strong> Starts playback with audio muted by default.
+        <br><em>Example:</em> <code>&lt;video muted controls&gt;...&lt;/video&gt;</code>
+    </li>
+    <li>
+        <strong>loop:</strong> Replays media automatically from the beginning once finished.
+        <br><em>Example:</em> <code>&lt;audio controls loop src="music.mp3"&gt;&lt;/audio&gt;</code>
+    </li>
+</ul>
+
+<p>Q20. What is &lt;track&gt; used for in HTML video? Explain &lt;iframe&gt; and its common uses with simple examples.</p>
+<ul>
+    <li>
+        <strong>&lt;track&gt;:</strong> Adds timed text tracks such as subtitles, captions (CC), and chapters via WebVTT (<code>.vtt</code>) files.
+        <br><em>Example:</em> <code>&lt;track src="subtitles.vtt" kind="subtitles" srclang="en" label="English"&gt;</code>
+    </li>
+    <li>
+        <strong>&lt;iframe&gt; (Inline Frame):</strong> Embeds an external document or web application within the current page.
+    </li>
+    <li>
+        <strong>Common Uses:</strong> Embedding YouTube videos, Google Maps, payment widgets, and external web content.
+        <br><em>Example (YouTube):</em> <code>&lt;iframe src="https://www.youtube.com/embed/xyz123" title="Video" width="560" height="315"&gt;&lt;/iframe&gt;</code>
+        <br><em>Example (Map):</em> <code>&lt;iframe src="https://maps.google.com/maps?q=London&amp;output=embed" title="Map" width="400" height="300"&gt;&lt;/iframe&gt;</code>
+    </li>
+</ul>
+
+<hr>
+</body>
+</html>
