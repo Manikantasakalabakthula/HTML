@@ -1,0 +1,172 @@
+<!-- ==========================================
+     Topics Covered:
+     - <form> with action and method="get"
+     - <fieldset> and <legend>
+     - <label> paired with <input>
+     - Text, Email, Password inputs
+     - Radio buttons and Checkboxes
+     - <select> and <option> dropdown
+     - <textarea> multi-line text input
+     - Submit and Reset buttons
+     - Attributes: name, value, placeholder, required, disabled
+     ========================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms - Part 1 (Basics)</title>
+</head>
+<body>
+    <h1>HTML Forms - Basics</h1>
+    
+    <!-- Form container using GET method -->
+    <form action="/submi-basic" method="get">
+
+        <!-- Fieldset groups related form elements together -->
+        <fieldset>
+            <!-- Legend provides a caption for the fieldset -->
+            <legend>
+                Basic Information
+            </legend>
+
+            <!-- Text input with placeholder and required attribute -->
+            <label for="username">
+                Username:
+            </label>
+            <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter your username">
+
+            <br><br>
+
+            <!-- Email input with placeholder and required attribute -->
+            <label for="email">
+                Email:
+            </label>
+            <input
+            type="email"
+            name="Email ID"
+            id="email"
+            placeholder="example@gmail.com">
+
+            <br><br>
+
+            <!-- Password input with required attribute -->
+            <label for="Password">
+                Password:
+            </label>
+            <input
+            type="password"
+            name="Password"
+            id="Password"
+            >
+
+            <br><br>
+
+            <!-- Radio buttons (single selection with same name) -->
+            <label>
+                Gender:
+            </label>
+
+            <input
+            type="radio"
+            name="Gender"
+            id="male"
+            value="male"
+            >
+            <label for="male">
+                Male
+            </label>
+
+            <input
+            type="radio"
+            name="Gender"
+            id="female"
+            value="female"
+            >
+            <label for="female">
+                Female
+            </label>
+
+            <br><br>
+
+            <!-- Checkbox input (independent toggle) -->
+             <input
+                type="checkbox"
+                id="subscribe"
+                name="subscribe"
+                value="yes"
+            >
+            <label for="subscribe">
+                Subscribe to newsletter
+            </label>
+
+            <br><br>
+
+            <!-- Select dropdown with options -->
+            <label for="country">
+                Country:
+            </label>
+
+            <select
+                name="country"
+                id="country"
+            >
+                <option value="- Choose Country -">- Choose Country -</option>
+                <option value="United States">United States</option>
+                <option value="India">India</option>
+                <option value="United Kingdom">United Kingdom</option>
+            </select>
+
+            <br><br>
+
+            <!-- Textarea for multi-line text input -->
+            <label for="bio">
+                Bio:
+            </label>
+
+            <br>
+
+            <textarea
+                name="BIO"
+                id="bio"
+                rows="4"
+                cols="40"
+                placeholder="write a few lines about yourself..."
+            ></textarea>
+
+            <br><br>
+
+            <label for="account-type">
+                Account Status:
+            </label>
+
+            <input
+                type="text"
+                id="account-type"
+                name="account_type"
+                value="Standard User (Default)"
+                disabled
+            >
+
+            <br><br>
+
+            <!-- Submit button to send form data -->
+            <button type="submit">
+                Submit
+            </button>
+
+            <!-- Reset button to clear all inputs to defaults -->
+            <button type="reset">
+                Reset
+            </button>
+        </fieldset>
+
+
+    </form>
+</body>
+</html>

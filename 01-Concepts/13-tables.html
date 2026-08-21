@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+</head>
+<body>
+    <h1>HTML Tables</h1>
+
+    <table border="1">
+        <!-- table caption -->
+        <caption>Student Details</caption>
+        
+        <!-- table head -->
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+
+        <!-- table body -->
+        <tbody>
+        <tr>
+            <td>101</td>
+            <td>Manikanta</td>
+            <td>HTML</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Rahul</td>
+            <td>CSS</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Priya</td>
+            <td>JavaScript</td>
+            <td>92</td>
+        </tr>
+        </tbody>
+
+        <!-- table footer -->
+        <tfoot>
+            <tr>
+                <td colspan="3">Average</td>
+                <td>89</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><br>
+
+    <!-- colspan example -->
+    <table border="1">
+        <tr>
+            <th colspan="2">Student Information</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Manikanta</td>
+        </tr>
+        <tr>
+            <td>Course</td>
+            <td>Frontend Development</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- rowspan example -->
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Manikanta</td>
+            <td>HTML</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>85</td>
+        </tr>
+    </table>
+</body>
+</html>
