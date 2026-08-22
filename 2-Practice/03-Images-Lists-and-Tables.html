@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images, Lists & Tables</title>
+</head>
+<body>
+        <!-- 
+            Q5. Image with Figure
+
+            Create an image using:
+
+            src
+            meaningful alt
+            width
+            height
+
+            Then convert it into a figure with a caption.
+        -->
+        <h2>Q5. Image with Figure</h2>
+        <img
+        src="/assets/images/ST.jpg"
+        alt="Stranger Things"
+        width="600px"
+        height="340px"
+        >
+        <figure>
+            <img
+            src="/assets/images/ST.jpg"
+            alt="Stranger Things"
+            width="500px"
+            height="280px"
+            >
+            <figcaption>Stranger Things Season 5</figcaption>
+        </figure>
+
+        <br><br>
+
+        <!-- 
+            Q6. Nested List
+
+            Create this structure using HTML:
+
+            Frontend Development
+                HTML
+                    Elements
+                    Attributes
+                CSS
+                    Selectors
+                    Box Model
+                JavaScript
+                    Variables
+                    Functions
+        -->
+        <h2>Q6. Nested List</h2>
+        <ul>
+            <li>
+                Frontend Development
+                <ul>
+                    <li>
+                        HTML
+                        <ul>
+                            <li>
+                                Elements
+                            </li>
+                            <li>
+                                Attributes
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        CSS
+                        <ul>
+                            <li>
+                                Selectors
+                            </li>
+                            <li>
+                                Box Model
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        JavaScript
+                        <ul>
+                            <li>
+                                Variables
+                            </li>
+                            <li>
+                                Functions
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <br><br>
+
+        <!-- 
+            Q7. Description List
+
+            Create a description list for:
+
+            HTML — Structure of web pages
+            CSS — Styling of web pages
+            JavaScript — Adds behavior and interactivity
+        -->
+        <h2>Q7. Description List</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Structure of web pages</dd>
+            <dt>CSS</dt>
+            <dd>Styling of web pages</dd>
+            <dt>JavaScript</dt>
+            <dd>Adds behavior and interactivity</dd>
+        </dl>
+
+        <br><br>
+
+        <!-- 
+            Q8. Build a Table
+
+            Create a student marks table containing:
+
+            Student name
+            HTML
+            CSS
+            JavaScript
+            Total
+
+            Use:
+
+            caption
+            thead
+            tbody
+            tfoot
+        -->
+        <h2>Q8. Build a Table</h2>
+        <table border="1">
+            <caption>Student Marks Table</caption>
+            <thead>
+                <tr>
+                    <th>Student name</th>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                    <th>JavaScript</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aarav Sharma</td>
+                    <td>88</td>
+                    <td>82</td>
+                    <td>79</td>
+                    <td>249</td>
+                </tr>
+                <tr>
+                    <td>Priya Patel</td>
+                    <td>94</td>
+                    <td>90</td>
+                    <td>85</td>
+                    <td>269</td>
+                </tr>
+                <tr>
+                    <td>Rohan Verma</td>
+                    <td>76</td>
+                    <td>81</td>
+                    <td>70</td>
+                    <td>227</td>
+                </tr>
+                <tr>
+                    <td>Sneha Iyer</td>
+                    <td>92</td>
+                    <td>88</td>
+                    <td>91</td>
+                    <td>271</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Class Average</td>
+                    <td>87.5</td>
+                    <td>85.25</td>
+                    <td>81.25</td>
+                    <td>254</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br><br>
+
+
+        <!-- 
+            Q9. Table Merging
+
+            Create a timetable where some classes span two columns and one subject spans two rows.
+
+            Use both:
+
+            colspan
+            rowspan
+        -->
+        <h2>Q9. Table Merging</h2>
+        <table border="1">
+            <caption>Weekly Class Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>9:00 - 10:00 AM</th>
+                    <th>10:00 - 11:00 AM</th>
+                    <th>11:15 AM - 12:15 PM</th>
+                    <th>12:15 - 1:15 PM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Mathematics</td>
+                    <td>Physics</td>
+                    <td colspan="2">Computer Science Lab</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td colspan="2">Chemistry Practical</td>
+                    <td rowspan="2">English Lit</td>
+                    <td>Physical Education</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Mathematics</td>
+                    <td>Physics</td>
+                    <td>History</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>

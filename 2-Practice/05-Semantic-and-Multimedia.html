@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML & Multimedia</title>
+</head>
+<body>
+    <!-- 
+        Q15. Convert Non-Semantic HTML
+
+        Convert this structure into meaningful semantic HTML:
+
+        <div>
+            <div>Website Header</div>
+            <div>Navigation</div>
+            <div>Main Content</div>
+            <div>Sidebar</div>
+            <div>Footer</div>
+        </div>
+
+        Use appropriate semantic elements.
+    -->
+    <h2>Q15. Convert Non-Semantic HTML</h2>
+    <header>
+        Website Header
+        <nav>
+            Navigation
+        </nav>
+    </header>
+    <main>
+        Main Content
+        <aside>
+            Sidebar
+        </aside>
+    </main>
+    <footer>
+        Footer
+    </footer>
+    <br><br>
+    <!-- 
+        Q16. Article Structure
+
+        Create a semantic article containing:
+
+        Article title
+        Author
+        Publication date
+        Introduction
+        Two sections
+        Related information
+
+        Use appropriate semantic elements.
+    -->
+    <h2>Q16. Article Structure</h2>
+    <article>
+        <header>
+            <h1>The Rise of Declarative UI Framework</h1>
+            <address>Alex Morgan</address>
+            <time>August 15, 2026</time>
+        </header>
+        <p>Modern web applications demand predictable, maintainable state management. Declarative paradigms have shifted how engineers design and reason about complex user interfaces from the ground up.</p>
+        <section>
+            <h2>Why Declarative State Outperforms Imperative DOM Updates</h2>
+            <p>Instead of manually manipulating individual elements upon every state change, modern renderers build an internal representation and update only the necessary tree nodes efficiently.</p>
+        </section>
+        <section>
+            <h2>Component Reusability and Clean Architecture</h2>
+            <p>Encapsulating layout, logic, and localized styles inside isolated components ensures that large-scale applications remain modular and straightforward to test.</p>
+        </section>
+        <aside>
+            <h3>Related Info: Quick Reference</h3>
+            <p>Check our companion repository for benchmark results comparing runtime reconciliation speeds across top frontend tools.</p>
+        </aside>
+    </article>
+
+    <br><br>
+
+    <!-- 
+        Q17. Image + Semantic Structure
+
+        Create a section containing an image with a caption and description.
+
+        Use:
+
+        <section>
+        <figure>
+        <figcaption>
+
+        appropriately.
+    -->
+    <h2>Q17. Image + Semantic Structure</h2>
+    <section>
+        <figure>
+            <img
+            src="/assets/images/BND.jpg"
+            alt="Brand New Day"
+            title="Spiderman: Brand New Day"
+            width="500px">
+            <figcaption>In Spider-Man: Brand New Day (2026), a completely isolated Peter Parker works full-time as Spider-Man four years after No Way Home. Dealing with profound loneliness and severe stress, his body begins undergoing a strange biological mutation while a dangerous body-hopping telepath (Jean Grey, played by Sadie Sink) emerges as a major threat.</figcaption>
+        </figure>
+    </section>
+
+    <br><br>
+
+    <!-- 
+        Q18. Audio
+
+        Add an audio file to a webpage.
+
+        Requirements:
+
+        Show controls
+        Provide a fallback message
+        Use <source>
+    -->
+    <h2>Q18. Audio</h2>
+    <audio controls>
+        <source src="/assets/audios/Audio.mp3" type="audio/mp3">
+        It's a Kanukkulla Reprise Version
+    </audio>
+
+    <br><br>
+
+    <!-- 
+        Q19. Video
+
+        Add a video with:
+
+        Controls
+        Width
+        Height
+        Poster image
+        Multiple video sources
+        Captions using <track>
+    -->
+    <h2>Q19. Video</h2>
+    <video poster="/assets/images/BND.jpg" width="500px" height="282px" controls>
+        <source src="/assets/videos/Video.mp4" type="video/mp4">
+    </video>
+
+    <br><br>
+
+    <!-- 
+        Q20. iframe
+
+        Embed an appropriate external resource using <iframe>.
+
+        Set:
+
+        Width
+        Height
+        Title
+    -->
+    <h2>Q20. iframe</h2>
+    <iframe
+        width="650px"
+        height="315"
+        src="03-Images-Lists-and-Tables.html"
+        title="Images-Lists-and-Tables"
+        allowfullscreen
+    ></iframe>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Form Controls</title>
+</head>
+<body>
+        <!-- 
+            Q10. Input Types
+
+            Create a form containing:
+
+            Text
+            Email
+            Password
+            Number
+            Date
+            File
+            Submit
+
+            Use the appropriate input type for each field.
+
+            Q11. Radio & Checkbox
+
+            Create a form that asks:
+
+            Gender:
+
+            Male
+            Female
+            Other
+
+            Skills:
+
+            HTML
+            CSS
+            JavaScript
+            Python
+
+            Use the appropriate form controls.
+
+            Q12. Select & Textarea
+
+            Create a form containing:
+
+            Country dropdown
+            Multiple-choice course dropdown
+            Address textarea
+            Feedback textarea
+
+            Q13. Form Validation
+
+            Create a registration form where:
+
+            Name is required
+            Email is required
+            Password must have at least 8 characters
+            Age must be between 18 and 60
+            Username must have 5–15 characters
+
+            Q14. Fieldset & Legend
+
+            Create a form divided into:
+
+            Personal Information
+            Account Information
+            Preferences
+
+            Use:
+
+            <fieldset>
+            <legend>
+        -->
+        <h2>Q10. Input Types</h2>
+        <h2>Q11. Radio & Checkbox</h2>
+        <h2>Q12. Select & Textarea</h2>
+        <h2>Q13. Form Validation</h2>
+        <h2>Q14. Fieldset & Legend</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name: </label>
+                <input type="text" name="Full Name" id="fullname" placeholder="Enter Full Name" required>
+                <br>
+                <label for="age">Age: </label>
+                <input type="number" name="Age" id="age" min="18" max="60" required>
+                <br>
+                <label for="gender">Gender: </label>
+
+                <input type="radio" name="Gender" id="male">
+                <label for="male">Male</label>
+
+                <input type="radio" name="Gender" id="female">
+                <label for="female">Female</label>
+
+                <input type="radio" name="Gender" id="others">
+                <label for="others">Others</label>
+                <br>
+                <label for="dob">Date of Birth: </label>
+                <input type="date" name="Date of Birth" id="dob" max="2026-12-31" required>
+                <br>
+                <label for="address">Residential Address: </label>
+                <textarea rows="3" cols="40" required></textarea>
+                <br>
+                <label for="country">Country: </label>
+                <select name="Country" id="country" required>
+                    <option value="select">- Select Country -</option>
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                </select>
+                <br>
+                <label for="photo">Upload ID / Photo: </label>
+                <input type="file" name="Upload ID / Photo" id="photo" accept=".pdf,.jpg,.png" required>
+                <br>
+                <button type="submit">Submit</button>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Account Information</legend>
+                <label for="username">User Name: </label>
+                <input type="text" name="User Name" id="username" placeholder="Enter User Name" pattern=".{5-15}" required>
+                <br>
+                <label for="email-id">Email Address: </label>
+                <input type="email" name="Email Address" id="email-id" placeholder="username@gmail.com" required>
+                <br>
+                <label for="password">Create Password: </label>
+                <input type="password" name="Password" id="password" minlength="8" required>
+                <br>
+                <button type="submit">Submit</button>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="skill">Skills: </label>
+                
+                <input type="checkbox" name="Skills" id="html">
+                <label for="html">HTML</label>
+                
+                <input type="checkbox" name="Skills" id="css">
+                <label for="css">CSS</label>
+                
+                <input type="checkbox" name="Skills" id="js">
+                <label for="js">JavaScript</label>
+
+                
+                <input type="checkbox" name="Skills" id="python">
+                <label for="python">Python</label>
+
+                
+                <input type="checkbox" name="Skills" id="sql">
+                <label for="sql">SQL</label>
+                <br>
+                <label for="course">Choose Courses: </label>
+
+                <select name="Choose Courses" id="course" required>
+                    <option value="choose">- Choose Course -</option>
+                    <option value="FED">Front End Development</option>
+                    <option value="BED">Back End Development</option>
+                    <option value="FSD">Full Stack Development</option>
+                    <option value="UI/UX">UI/UX Design</option>
+                </select>
+                <br>
+                <label for="expectation">Course Expectations: </label>
+                <textarea name="Course Expectations" id="course" placeholder="Share your goals and expectations for this course..." rows="4" cols="40" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+</body>
+</html>
