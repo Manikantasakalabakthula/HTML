@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - City Explorer</title>
+</head>
+<body>
+
+    <header>
+        <h1>City Explorer</h1>
+        <p><em>Discover. Explore. Experience.</em></p>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="places.html">Places</a> |
+            <a href="place-details.html">Place Details</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact City Explorer</h2>
+            <p>Have a question, suggestion, or recommendation? Send us a message using the form below.</p>
+        </section>
+
+        <section>
+            <h3>Contact Information</h3>
+            <address>
+                <p><strong>Email:</strong> <a href="mailto:explore@cityexplorer.example">explore@cityexplorer.example</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+919000000000">+91 90000 00000</a></p>
+                <p><strong>Address:</strong> Visakhapatnam, Andhra Pradesh, India</p>
+            </address>
+            <p><strong>Working Hours:</strong></p>
+            <p>Monday – Saturday<br><time datetime="10:00">10:00 AM</time> – <time datetime="18:00">6:00 PM</time></p>
+        </section>
+
+        <section>
+            <h3>Send a Message</h3>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone:</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <p>
+                        <label for="subject">Subject:</label><br>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Question</option>
+                            <option value="recommendation">Place Recommendation</option>
+                            <option value="feedback">Website Feedback</option>
+                            <option value="report">Report Incorrect Information</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..." required></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <p><strong>Preferred Contact Method:</strong></p>
+                    <label>
+                        <input type="radio" name="contact-method" value="email" checked> Email
+                    </label>
+                    <label>
+                        <input type="radio" name="contact-method" value="phone"> Phone
+                    </label>
+
+                    <p><strong>Your Interests:</strong></p>
+                    <label><input type="checkbox" name="interests" value="beaches"> Beaches</label><br>
+                    <label><input type="checkbox" name="interests" value="history"> Historical Places</label><br>
+                    <label><input type="checkbox" name="interests" value="nature"> Nature</label><br>
+                    <label><input type="checkbox" name="interests" value="food"> Food</label><br>
+                    <label><input type="checkbox" name="interests" value="museums"> Museums</label><br>
+                    <label><input type="checkbox" name="interests" value="shopping"> Shopping</label>
+                </fieldset>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="confirmation" required>
+                        I confirm that the information I provided is correct.
+                    </label>
+                </p>
+
+                <p>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <h3>City Explorer</h3>
+        <p>Discover the places that make Visakhapatnam special.</p>
+        <address>
+            <p>Email: <a href="mailto:explore@cityexplorer.example">explore@cityexplorer.example</a></p>
+            <p>Phone: <a href="tel:+919000000000">+91 90000 00000</a></p>
+        </address>
+        <p><small>&copy; 2026 City Explorer</small></p>
+    </footer>
+
+</body>
+</html>
