@@ -2,9 +2,10 @@
 
 A complete beginner-friendly HTML learning journey covering concepts,
 theory, practical problem solving, mini projects, a main project,
-debugging, organization, and documentation.
+semantic structure, forms, multimedia, debugging, organization, and
+documentation.
 
-------------------------------------------------------------------------
+---
 
 ## 🎯 Goal
 
@@ -13,7 +14,7 @@ React.js.
 
 The learning approach is:
 
-``` text
+```text
 Learn
   ↓
 Understand
@@ -29,201 +30,266 @@ Debug
 Document
 ```
 
-------------------------------------------------------------------------
+---
 
 # 📚 1. HTML Concepts
 
-## 1. HTML Fundamentals
+## 1. HTML Tags
 
--   HTML
--   Tags and elements
--   Opening and closing tags
--   Attributes
--   Nesting
--   Parent, child, and sibling elements
--   Void elements
--   Block and inline elements
--   Comments
--   Global attributes
+* HTML tags
+* Opening tags
+* Closing tags
+* HTML elements
+* Heading elements
+* Paragraph elements
+* `<div>`
+* `<span>`
+* `<br>`
+* `<hr>`
+* `<img>`
+* Basic HTML syntax
 
 ## 2. Document Structure
 
--   `<!DOCTYPE html>`
--   `<html>`
--   `<head>`
--   `<body>`
--   `lang`
--   `<title>`
--   `<meta charset>`
--   Viewport
--   Favicon
+* `<!DOCTYPE html>`
+* `<html>`
+* `<head>`
+* `<body>`
+* `lang`
+* `<meta charset>`
+* Viewport
+* Meta description
+* `<title>`
 
-## 3. Text & Content
+## 3. File Paths
 
--   `<h1>` -- `<h6>`
--   `<p>`
--   `<strong>`
--   `<em>`
--   `<mark>`
--   `<small>`
--   `<br>`
--   `<hr>`
--   `<blockquote>`
--   `<q>`
--   `<pre>`
--   `<code>`
+* Absolute paths
+* Relative paths
+* Resource paths
+* Image paths
+* Internal file links
 
-## 4. Links & Navigation
+## 4. Paragraph & Preformatted Text
 
--   `<a>`
--   `href`
--   Absolute URLs
--   Relative URLs
--   Internal links
--   Fragment links
--   Email links
--   Telephone links
--   `target`
--   `rel`
--   `<nav>`
+* `<p>`
+* Multiple paragraphs
+* `<pre>`
+* Preserved spaces
+* Preserved line breaks
+* Code-style text
 
 ## 5. HTML Entities
 
--   HTML entities
--   `&lt;`
--   `&gt;`
--   `&amp;`
--   `&quot;`
--   `&apos;`
--   `&nbsp;`
--   Copyright
--   Trademark
--   Special characters
+* HTML entities
+* `&lt;`
+* `&gt;`
+* `&amp;`
+* `&quot;`
+* `&apos;`
+* `&nbsp;`
+* `&copy;`
+* `&reg;`
+* `&trade;`
+* Rupee symbol
 
-## 6. Images
+## 6. Div & Span
 
--   `<img>`
--   `src`
--   `alt`
--   `width`
--   `height`
--   Image paths
--   `<figure>`
--   `<figcaption>`
--   `<picture>`
--   `srcset`
+* `<div>`
+* Block-level containers
+* `<span>`
+* Inline containers
+* Grouping content
+* Structuring content
 
-## 7. Lists
+## 7. Text Formatting
 
--   `<ul>`
--   `<ol>`
--   `<li>`
--   Nested lists
--   `<dl>`
--   `<dt>`
--   `<dd>`
+* `<strong>`
+* `<b>`
+* `<em>`
+* `<i>`
+* `<u>`
+* `<mark>`
+* `<del>`
+* `<ins>`
+* `<small>`
+* `<sub>`
+* `<sup>`
+* Combined text formatting
 
-## 8. Tables
+## 8. Headings
 
--   `<table>`
--   `<caption>`
--   `<tr>`
--   `<th>`
--   `<td>`
--   `<thead>`
--   `<tbody>`
--   `<tfoot>`
--   `rowspan`
--   `colspan`
+* `<h1>`
+* `<h2>`
+* `<h3>`
+* `<h4>`
+* `<h5>`
+* `<h6>`
+* Heading hierarchy
+* Main headings
+* Section headings
+* Subsection headings
 
-## 9. Forms
+## 9. Lists
 
--   `<form>`
--   `<label>`
--   `<input>`
--   Input types
--   `<textarea>`
--   `<select>`
--   `<option>`
--   `<button>`
--   `<fieldset>`
--   `<legend>`
--   `name`
--   `value`
--   `placeholder`
--   `required`
--   `disabled`
--   `readonly`
--   `autocomplete`
--   `min`
--   `max`
--   `minlength`
--   `maxlength`
--   `pattern`
--   HTML validation
--   GET and POST basics
+* `<ul>`
+* `<ol>`
+* `<li>`
+* Ordered list attributes
+* `start`
+* `reversed`
+* `<dl>`
+* `<dt>`
+* `<dd>`
+* Nested lists
 
-## 10. Semantic HTML
+## 10. Links & Navigation
 
--   Semantic HTML
--   `<header>`
--   `<nav>`
--   `<main>`
--   `<section>`
--   `<article>`
--   `<aside>`
--   `<footer>`
--   `<figure>`
--   `<figcaption>`
--   `<time>`
--   `<address>`
--   Semantic vs non-semantic elements
--   Heading structure
+* `<a>`
+* `href`
+* External links
+* Internal links
+* Absolute URLs
+* Relative URLs
+* `target="_blank"`
+* Email links
+* Telephone links
+* Fragment links
+* `<nav>`
 
-## 11. Multimedia
+## 11. Images
 
--   `<audio>`
--   `<video>`
--   `<source>`
--   `<track>`
--   `controls`
--   `autoplay`
--   `muted`
--   `loop`
--   Captions/subtitles
--   `<iframe>`
+* `<img>`
+* `src`
+* `alt`
+* `width`
+* `height`
+* `title`
+* Image links
+* `<figure>`
+* `<figcaption>`
+
+## 12. Tables
+
+* `<table>`
+* `<caption>`
+* `<thead>`
+* `<tbody>`
+* `<tfoot>`
+* `<tr>`
+* `<th>`
+* `<td>`
+* `border`
+* `colspan`
+* `rowspan`
+
+## 13. Forms
+
+* `<form>`
+* `<label>`
+* `<input>`
+* Text input
+* Email input
+* Password input
+* Number input
+* Date input
+* File input
+* Radio buttons
+* Checkboxes
+* `<select>`
+* `<option>`
+* `<textarea>`
+* `<button>`
+* `<fieldset>`
+* `<legend>`
+* `action`
+* `method`
+* `name`
+* `value`
+* `placeholder`
+* `required`
+* `disabled`
+* `readonly`
+* `autocomplete`
+* `min`
+* `max`
+* `minlength`
+* `maxlength`
+* `pattern`
+* `<datalist>`
+* GET method
+* POST method
+* `enctype`
+* Multipart form data
+* Built-in HTML validation
+* Submit and reset controls
+
+## 14. Multimedia
+
+* `<audio>`
+* `<video>`
+* `src`
+* `controls`
+* `poster`
+* `<iframe>`
+* Embedded content
+* YouTube embedding
+* Audio resources
+* Video resources
+
+## 15. Semantic HTML
+
+* Semantic HTML
+* `<header>`
+* `<nav>`
+* `<main>`
+* `<section>`
+* `<article>`
+* `<aside>`
+* `<footer>`
+* `<figure>`
+* `<figcaption>`
+* `<address>`
+* `<time>`
+* Semantic page structure
+* Semantic vs non-semantic elements
 
 **Status: ✅ Completed**
 
-------------------------------------------------------------------------
+---
 
 # 📝 2. Theory Practice
 
-Completed **20 theory questions** covering all HTML concepts.
+Completed **20 theory questions** covering the core HTML concepts.
 
 ### Topics Covered
 
--   HTML Fundamentals
--   Document Structure
--   Text & Content
--   Links & Navigation
--   HTML Entities
--   Images
--   Lists
--   Tables
--   Forms
--   Semantic HTML
--   Multimedia
+* HTML Fundamentals
+* Document Structure
+* Text & Content
+* File Paths
+* HTML Entities
+* Div & Span
+* Text Formatting
+* Headings
+* Lists
+* Links & Navigation
+* Images
+* Tables
+* Forms
+* Form Controls
+* Form Validation
+* Semantic HTML
+* Multimedia
 
 ### Practice File
 
-``` text
-01-theory-questions.html
+```text
+02-Practice/01-theory-questions.html
 ```
 
 **Status: ✅ Completed**
 
-------------------------------------------------------------------------
+---
 
 # 💻 3. Practical Practice
 
@@ -235,43 +301,100 @@ website.
 
 ## File 1 --- Text, Links & Entities
 
-``` text
-02-Text-Links-and-Entities.html
+```text
+02-Practice/02-Text-Links-and-Entities.html
 ```
 
-Covers: - HTML structure - Text elements - Links - HTML entities - Basic
-HTML problem solving
+Covers:
+
+* Fixing incorrect HTML structure
+* Text sections
+* Headings
+* Paragraphs
+* `<strong>`
+* `<em>`
+* `<mark>`
+* `<hr>`
+* Links
+* External links
+* Internal links
+* Email links
+* Telephone links
+* HTML entities
 
 ## File 2 --- Images, Lists & Tables
 
-``` text
-03-Images-Lists-and-Tables.html
+```text
+02-Practice/03-Images-Lists-and-Tables.html
 ```
 
-Covers: - Images - Figures - Captions - Lists - Nested lists -
-Description lists - Tables - `rowspan` - `colspan`
+Covers:
+
+* Images
+* `src`
+* `alt`
+* Width and height
+* Figures
+* Captions
+* Nested lists
+* Ordered lists
+* Unordered lists
+* Description lists
+* Tables
+* Table headings
+* Table rows and cells
+* `rowspan`
+* `colspan`
 
 ## File 3 --- Forms & Validation
 
-``` text
-04-Forms-and-Validation.html
+```text
+02-Practice/04-Forms-and-Validation.html
 ```
 
-Covers: - Input types - Radio buttons - Checkboxes - Select menus -
-Textareas - HTML validation - Fieldsets - Legends
+Covers:
+
+* Input types
+* Text inputs
+* Email inputs
+* Password inputs
+* Number inputs
+* Date inputs
+* File inputs
+* Submit controls
+* Radio buttons
+* Checkboxes
+* Select menus
+* Textareas
+* Form labels
+* Form validation
+* Form attributes
 
 ## File 4 --- Semantic & Multimedia
 
-``` text
-05-Semantic-and-Multimedia.html
+```text
+02-Practice/05-Semantic-and-Multimedia.html
 ```
 
-Covers: - Semantic HTML - Articles - Sections - Figures - Audio -
-Video - Captions - iframe
+Covers:
+
+* Semantic HTML
+* Header
+* Navigation
+* Main content
+* Sections
+* Articles
+* Aside
+* Footer
+* Figures
+* Audio
+* Video
+* Iframes
+* Embedded content
 
 **Status: ✅ Completed**
 
-------------------------------------------------------------------------
+---
 
 # 🛠️ 4. Mini Projects
 
@@ -279,55 +402,98 @@ Four mini projects were selected to avoid unnecessary repetition.
 
 ## 1. Single-Page CV
 
-``` text
-01-Single-Page-CV/
+```text
+03-Mini-Projects/01-Single-Page-CV.html
 ```
 
-Practiced: - Document structure - Headings - Paragraphs - Lists -
-Links - Semantic structure
+Practiced:
+
+* Document structure
+* Header
+* Navigation
+* Sections
+* Headings
+* Paragraphs
+* Lists
+* Semantic structure
+* Resume-style content organization
 
 **Status: ✅ Completed**
 
-------------------------------------------------------------------------
+---
 
 ## 2. Basic HTML Website
 
-``` text
-02-Basic-HTML-Website/
+```text
+03-Mini-Projects/02-Basic-HTML-Website.html
 ```
 
-Practiced: - Multiple pages - Navigation - Relative links - Page
-structure - Reusable navigation
+Practiced:
+
+* Website structure
+* Header
+* Navigation
+* Main content
+* Multiple sections
+* Internal navigation
+* Front-End Development content
+* Roadmap structure
+* Lists
+* Images
+* Semantic HTML
 
 **Status: ✅ Completed**
 
-------------------------------------------------------------------------
+---
 
 ## 3. Pricing Comparison
 
-``` text
-03-Pricing-Comparison/
+```text
+03-Mini-Projects/03-Pricing-Comparison.html
 ```
 
-Practiced: - Tables - Table headings - Rows and columns - Table
-structure - `rowspan` - `colspan`
+Practiced:
+
+* Page structure
+* Header
+* Navigation
+* Pricing tables
+* Table captions
+* Table headings
+* Table rows and cells
+* `colspan`
+* Table footer
+* Footer
 
 **Status: ✅ Completed**
 
-------------------------------------------------------------------------
+---
 
 ## 4. Contact Form
 
-``` text
-04-Contact-Form/
+```text
+03-Mini-Projects/04-Contact-Form.html
 ```
 
-Practiced: - Forms - Labels - Input types - Radio buttons - Checkboxes -
-Select menus - Textarea - Fieldsets - Validation
+Practiced:
+
+* Header
+* Navigation
+* Contact section
+* Form structure
+* Labels
+* Text inputs
+* Email input
+* Select menu
+* Textarea
+* Radio buttons
+* Fieldsets
+* Legends
+* Form controls
 
 **Status: ✅ Completed**
 
-------------------------------------------------------------------------
+---
 
 # 🚀 5. Main Project --- City Explorer
 
@@ -336,11 +502,15 @@ Select menus - Textarea - Fieldsets - Validation
 Build a multi-page city exploration website using **HTML only**.
 
 The project combines the concepts and practical skills learned
-throughout the HTML roadmap.
+throughout the HTML roadmap into a complete structured website.
+
+The project focuses on exploring **Visakhapatnam** through multiple
+pages containing places, detailed information, multimedia, tables, and
+a contact form.
 
 ## Project Structure
 
-``` text
+```text
 City-Explorer/
 │
 ├── index.html
@@ -353,54 +523,66 @@ City-Explorer/
 
 ### Home --- `index.html`
 
--   City introduction
--   Navigation
--   Featured places
--   Images
--   Figures and captions
--   Lists
--   Links
--   Footer
+* City Explorer introduction
+* Navigation
+* Visakhapatnam overview
+* Featured places
+* RK Beach
+* Kailasagiri
+* Submarine Museum
+* Images
+* Figures and captions
+* Categories
+* Descriptions
+* Links
 
 ### Places --- `places.html`
 
--   Multiple places
--   Images
--   Categories
--   Descriptions
--   Lists
--   Links
--   Semantic elements
+* Places to explore in Visakhapatnam
+* Multiple place entries
+* Categories
+* Locations
+* Descriptions
+* Images
+* Figures
+* Captions
+* Links to detailed information
 
 ### Place Details --- `place-details.html`
 
--   Detailed place information
--   Image and caption
--   Information table
--   Visiting information
--   Lists
--   Video
--   Audio
--   Captions
--   iframe
+* Detailed place information
+* Kailasagiri information
+* Image and caption
+* Information table
+* Visitor information
+* Lists
+* Multimedia content
+* Audio
+* Video
+* Iframe
+* Semantic structure
 
 ### Contact --- `contact.html`
 
--   Contact information
--   Email
--   Phone
--   Address
--   Contact form
--   Labels
--   Input types
--   Select
--   Textarea
--   HTML validation
--   Submit and reset buttons
+* Contact information
+* Email
+* Phone
+* Address
+* Working hours
+* `<time>`
+* Contact form
+* Personal information fieldset
+* Message fieldset
+* Labels
+* Input types
+* Select
+* Textarea
+* HTML validation
+* Submit button
 
 **Status: ✅ Completed**
 
-------------------------------------------------------------------------
+---
 
 # 🐛 6. Review & Debugging
 
@@ -411,61 +593,120 @@ projects.
 
 ## Things to Review
 
--   Correct HTML structure
--   Correct nesting
--   Proper heading hierarchy
--   Working links
--   Meaningful image `alt` text
--   Correct form labels
--   Correct table structure
--   Proper semantic elements
--   Valid HTML syntax
+* Correct HTML structure
+* Correct nesting
+* Proper heading hierarchy
+* Working internal links
+* Working external links
+* Meaningful image `alt` text
+* Correct form labels
+* Correct table structure
+* Proper semantic elements
+* Valid HTML syntax
+* Correct form attributes
+* Correct multimedia elements
+* Correct relative file paths
 
 ## Debugging Practice
 
 Intentionally practice fixing:
 
--   Broken links
--   Missing closing tags
--   Incorrect nesting
--   Missing `alt` attributes
--   Incorrect form labels
--   Incorrect table structure
+* Incorrect nesting
+* Missing closing tags
+* Broken links
+* Incorrect file paths
+* Missing `alt` attributes
+* Incorrect form labels
+* Incorrect input types
+* Incorrect table structure
+* Incorrect `rowspan`
+* Incorrect `colspan`
+* Incorrect semantic structure
+* Broken multimedia paths
 
 **Status: 🔄 Ongoing / Recommended**
 
-------------------------------------------------------------------------
+---
 
 # 📁 7. Project Organization
 
 The HTML work is organized into separate sections.
 
-``` text
+```text
 HTML/
 │
-├── Practice/
+├── 01-Concepts/
+│   ├── 01-tags.html
+│   ├── 02-structure.html
+│   ├── 03-paths.html
+│   ├── 04-p-pre.html
+│   ├── 05-entities.html
+│   ├── 06-div-span.html
+│   ├── 07-text-formatting.html
+│   ├── 08-headings.html
+│   ├── 09-lists.html
+│   ├── 10-links.html
+│   ├── 11-navbar.html
+│   ├── 12-images.html
+│   ├── 13-tables.html
+│   ├── 14-forms-1.html
+│   ├── 14-forms-2.html
+│   ├── 15-multimedia.html
+│   └── 16-semantic.html
+│
+├── 02-Practice/
 │   ├── 01-theory-questions.html
 │   ├── 02-Text-Links-and-Entities.html
 │   ├── 03-Images-Lists-and-Tables.html
 │   ├── 04-Forms-and-Validation.html
 │   └── 05-Semantic-and-Multimedia.html
 │
-├── Mini-Projects/
-│   ├── 01-Single-Page-CV/
-│   ├── 02-Basic-HTML-Website/
-│   ├── 03-Pricing-Comparison/
-│   └── 04-Contact-Form/
+├── 03-Mini-Projects/
+│   ├── 01-Single-Page-CV.html
+│   ├── 02-Basic-HTML-Website.html
+│   ├── 03-Pricing-Comparison.html
+│   └── 04-Contact-Form.html
 │
-└── City-Explorer/
-    ├── index.html
-    ├── places.html
-    ├── place-details.html
-    └── contact.html
+├── 04-Project/
+│   ├── index.html
+│   ├── places.html
+│   ├── place-details.html
+│   └── contact.html
+│
+├── assets/
+│   ├── audios/
+│   │   └── Audio.mp3
+│   │
+│   ├── images/
+│   │   ├── ABL.jpg
+│   │   ├── BND.jpg
+│   │   ├── ST.jpg
+│   │   ├── e-coommerce.png
+│   │   ├── image-1.png
+│   │   ├── image-2.png
+│   │   ├── image-3.png
+│   │   ├── image-5.png
+│   │   ├── image-6.png
+│   │   ├── image-7.png
+│   │   ├── image-8.png
+│   │   ├── image-9.png
+│   │   ├── jersey.jpg
+│   │   ├── laptop.png
+│   │   ├── omlette.jpg
+│   │   ├── profile.png
+│   │   └── trvel-blog.jpg
+│   │
+│   └── videos/
+│       ├── Video.mp4
+│       ├── Video-2.mp4
+│       └── Video-3.mp4
+│
+└── README.md
 ```
 
 **Status: ✅ Completed**
 
-------------------------------------------------------------------------
+---
 
 # 📖 8. Documentation
 
@@ -473,18 +714,21 @@ Created this README to document the complete HTML learning journey.
 
 It records:
 
--   Concepts learned
--   Theory practice
--   Practical practice
--   Mini projects
--   Main project
--   Debugging and review
--   Project organization
--   Overall progress
+* Concepts learned
+* Theory practice
+* Practical practice
+* Mini projects
+* Main project
+* Forms and validation
+* Semantic HTML
+* Multimedia
+* Debugging and review
+* Project organization
+* Overall progress
 
 **Status: ✅ Completed**
 
-------------------------------------------------------------------------
+---
 
 # 🧠 9. Learning Decisions & Improvements
 
@@ -493,23 +737,31 @@ fixed list.
 
 ### Changes Made
 
--   Removed unnecessary HTML topics that are better learned with CSS,
-    JavaScript, or React.
--   Reduced theory practice from 40 questions to 20.
--   Combined related practical questions into fewer files.
--   Reduced mini projects from 6 to 4 to avoid repetition.
--   Replaced the Blog Post project with the Contact Form project.
--   Kept the main project focused enough for a beginner HTML learner.
--   Separated theory, practical exercises, mini projects, and the main
-    project.
+* Organized HTML concepts into a structured learning sequence.
+* Separated concepts, theory practice, practical problems, mini
+  projects, and the main project.
+* Reduced theory practice to **20 questions** covering the major HTML
+  concepts.
+* Combined related practical questions into **5 focused files**.
+* Kept practical exercises separate from mini projects.
+* Covered both basic and advanced HTML forms.
+* Included semantic HTML as a dedicated topic.
+* Included multimedia elements such as audio, video, and iframe.
+* Included tables, lists, links, images, entities, and text
+  formatting.
+* Kept four mini projects to avoid unnecessary repetition.
+* Added a multi-page **City Explorer** project as the main project.
+* Organized reusable media resources inside the `assets` folder.
+* Kept concepts, practice exercises, mini projects, and the main
+  project clearly separated.
 
 This keeps the learning process focused and manageable.
 
-------------------------------------------------------------------------
+---
 
 # 🎯 10. HTML Learning Workflow
 
-``` text
+```text
 📚 Learn Concepts
        ↓
 📝 Practice Theory
@@ -527,21 +779,23 @@ This keeps the learning process focused and manageable.
 📖 Document Work
 ```
 
-------------------------------------------------------------------------
+---
 
 # 🏆 Final HTML Progress
 
-  Area                         Status
-  ---------------------------- ----------------
-  HTML Concepts                ✅ Completed
-  20 Theory Questions          ✅ Completed
-  20 Practical Problems        ✅ Completed
-  4 Mini Projects              ✅ Completed
-  City Explorer Main Project   ✅ Completed
-  Project Organization         ✅ Completed
-  Documentation                ✅ Completed
+Area                         Status
 
-------------------------------------------------------------------------
+---
+
+HTML Concepts                ✅ Completed
+20 Theory Questions          ✅ Completed
+20 Practical Problems        ✅ Completed
+4 Mini Projects              ✅ Completed
+City Explorer Main Project   ✅ Completed
+Project Organization         ✅ Completed
+Documentation                ✅ Completed
+
+---
 
 # 🚀 HTML Completed
 
